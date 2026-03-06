@@ -146,7 +146,7 @@ git push origin main
 # 4. Verify
 kubectl get pods -n dev
 ```
-ronment."*
+
 
 ## 🚦 Quick Start
 
