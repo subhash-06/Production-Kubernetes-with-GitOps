@@ -5,12 +5,13 @@ metadata:
   namespace: dev
   annotations:
     kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   rules:
   - http:
       paths:
-      - path: /dev
-        pathType: Prefix
+      - path: /dev(/|$)(.*)
+        pathType: ImplementationSpecific
         backend:
           service:
             name: game-2048-service
