@@ -5,12 +5,13 @@ metadata:
   namespace: prod
   annotations:
     kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   rules:
   - http:
       paths:
-      - path: /prod
-        pathType: Prefix
+      - path: /prod(/|$)(.*)
+        pathType: ImplementationSpecific
         backend:
           service:
             name: game-2048-service
