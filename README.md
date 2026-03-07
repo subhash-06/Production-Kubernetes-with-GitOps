@@ -93,7 +93,8 @@ Then open: http://localhost:3000
 
 | Technology | Purpose | Version |
 |------------|---------|---------|
-| **Kubernetes (AKS)** | Container orchestration | 1.28+ |
+| **Platform: Azure Kubernetes Service (AKS)
+| Container orchestration | 1.28+ |
 | **ArgoCD** | GitOps continuous deployment | Latest |
 | **NGINX Ingress** | Layer 7 load balancing | Latest |
 | **Prometheus** | Metrics collection | Latest |
